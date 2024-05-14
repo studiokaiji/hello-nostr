@@ -9,14 +9,14 @@ export const Button = (
     <button
       className={`rounded-full px-12 py-2 border-2 border-black font-medium hover:brightness-90 transition-all whitespace-nowrap ${
         props.color === "pink"
-          ? "bg-[#FFA7A7]"
+          ? "bg-accent-pink"
           : props.color === "orange"
-          ? "bg-orange-300"
+          ? "bg-accent-orange"
           : props.color === "white"
           ? "bg-white"
           : props.color === "emerald"
-          ? "bg-emerald-300"
-          : "bg-[#DBBEFF]"
+          ? "bg-accent-emerald"
+          : "bg-accent-purple"
       }`}
       type={props.type || "button"}
       {...props}

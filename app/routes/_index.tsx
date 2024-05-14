@@ -22,19 +22,19 @@ const features = [
     title: "メールアドレス・パスワード不要",
     text: "Nostrは、メールアドレスやパスワードを使わずにアカウントを作成できる分散型SNSです。",
     image: noEmailPasswordSrc,
-    bgColor: "bg-[#9EDCFF]",
+    bgColor: "bg-accent-sky",
   },
   {
     title: "好きなアプリ、お気に入りのデザインで",
     text: "Nostrでは、対応する多くのスマートフォン・ウェブアプリがあり、これらを自由に使い分けることができます。",
     image: favoriteDesignSrc,
-    bgColor: "bg-[#DBBEFF]",
+    bgColor: "bg-accent-purple",
   },
   {
     title: "広告フリー",
     text: "Nostrは「アプリ」と、データが流れてくる「リレー」のそれぞれを、自分で選択できるので、広告を表示するかしないかは、あなたが決めることができます。",
     image: noAdsSrc,
-    bgColor: "bg-[#FFA7A7]",
+    bgColor: "bg-accent-pink",
   },
 ];
 
@@ -57,7 +57,7 @@ const gettingStartedSteps = [
       </>
     ),
     image: nostterTopImageSrc,
-    bgColor: "bg-[#DBBEFF]",
+    bgColor: "bg-accent-purple",
   },
   {
     title: "アカウントを作る",
@@ -75,7 +75,7 @@ const gettingStartedSteps = [
       </>
     ),
     image: nostterCreateAccountImageSrc,
-    bgColor: "bg-emerald-300",
+    bgColor: "bg-accent-emerald",
   },
   {
     title: "タイムラインを見てみる",
@@ -104,7 +104,7 @@ const gettingStartedSteps = [
       </>
     ),
     image: nostterPostImageSrc,
-    bgColor: "bg-orange-300",
+    bgColor: "bg-accent-orange",
   },
   {
     title: "プロフィールを設定する",
@@ -122,7 +122,7 @@ const gettingStartedSteps = [
       </>
     ),
     image: nostterProfileImageSrc,
-    bgColor: "bg-[#FFA7A7]",
+    bgColor: "bg-accent-pink",
   },
 ];
 
@@ -159,7 +159,7 @@ export default function Index() {
           <p>Nostrとは、分散型SNSとです。</p>
         </div>
         <div>
-          <p className="text-xl whitespace-nowrap border-b-2 leading-none border-black text-center font-medium p-6 bg-yellow-400 sm:bg-transparent transition-colors">
+          <p className="text-xl whitespace-nowrap border-b-2 leading-none border-black text-center p-6 bg-accent-yellow sm:bg-transparent transition-colors">
             とりあえず使ってみる
           </p>
           <div className="space-y-3 flex flex-col p-6">
@@ -204,7 +204,7 @@ export default function Index() {
               </div>
             </div>
             <a
-              className="text-3xl font-bold p-6 bg-yellow-400 max-w-screen-lg hover:brightness-95 transition-all md:border-x-2 border-b-2 border-black flex items-center justify-between"
+              className="text-3xl font-bold p-6 bg-accent-yellow max-w-screen-lg hover:brightness-95 transition-all md:border-x-2 border-b-2 border-black flex items-center justify-between"
               href="https://scrapbox.io/nostr/はじめてのNostr%E3%80%90はじめての方はこちら%E3%80%91"
               target="_blank"
               rel="noreferrer"

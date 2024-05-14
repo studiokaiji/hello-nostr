@@ -12,6 +12,7 @@ import type { LinksFunction } from "@remix-run/node";
 
 import "@fontsource/noto-sans-jp/400.css";
 import "@fontsource/noto-sans-jp/500.css";
+import "@fontsource/noto-sans-jp/700.css";
 
 export const links: LinksFunction = () => {
   return [

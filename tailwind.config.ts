@@ -16,6 +16,16 @@ export default {
       fontFamily: {
         sans: ["Noto Sans JP", "sans-serif", "system-ui"],
       },
+      colors: {
+        accent: {
+          pink: "#ffa7a7",
+          orange: "#fdba74",
+          emerald: "#6ee7b7",
+          purple: "#dbbeff",
+          yellow: "#facc15",
+          sky: "#9edcff",
+        },
+      },
     },
   },
   plugins: [],
