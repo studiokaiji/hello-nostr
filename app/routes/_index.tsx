@@ -14,6 +14,7 @@ import nostterPostImageSrc from "~/assets/Post.webp";
 import nostterTrendImageSrc from "~/assets/Trend.webp";
 import nostterProfileImageSrc from "~/assets/Profile.webp";
 import cheeseSrc from "~/assets/Cheese.webp";
+import ogpSrc from "~/assets/OGP.webp";
 import { Link } from "~/components/Link";
 import { Footer } from "~/components/Footer";
 
@@ -128,17 +129,59 @@ const gettingStartedSteps = [
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
+    { title: "Hello, Nostr! - Nostr日本語チュートリアルサイト" },
     {
       name: "text",
-      content: "Welcome to Remix! Using Vite and Cloudflare!",
+      content:
+        "Nostrについての情報や使い方を紹介するチュートリアルサイトです。",
+    },
+    {
+      tagName: "meta",
+      property: "og:title",
+      content: "Hello, Nostr! - Nostr日本語チュートリアルサイト",
+    },
+    {
+      tagName: "meta",
+      property: "og:description",
+      content:
+        "Nostrについての情報や使い方を紹介するチュートリアルサイトです。",
+    },
+    {
+      tagName: "meta",
+      property: "og:image",
+      content: ogpSrc,
+    },
+    {
+      tagName: "meta",
+      property: "og:url",
+      content: "hello-nostr.studiokaiji.com",
+    },
+    {
+      tagName: "meta",
+      property: "og:type",
+      content: "website",
+    },
+    {
+      tagName: "meta",
+      property: "og:site_name",
+      content: "Hello, Nostr! - Nostr日本語チュートリアルサイト",
+    },
+    {
+      tagName: "meta",
+      property: "og:locale",
+      content: "ja_JP",
+    },
+    {
+      tagName: "meta",
+      property: "twitter:card",
+      content: "summary_large_image",
     },
   ];
 };
 
 export default function Index() {
   return (
-    <div className="">
+    <div>
       <Header />
 
       <div className="flex flex-col items-center text-center py-36 space-y-6 border-b-2 border-black p-6">
