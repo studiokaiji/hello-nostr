@@ -156,7 +156,12 @@ export default function Index() {
         <div className="p-12 space-y-4 w-full border-b-2 sm:border-b-0 sm:border-r-2 border-black">
           <img src={whatIsNostrSrc} alt="What is Nostr" width={80} />
           <h2 className="text-4xl font-medium">Nostrとは？</h2>
-          <p>Nostrとは、分散型SNSとです。</p>
+          <p>
+            Nostrとは、分散型SNSを構築するために作られたシンプルなシステム/プロトコルです。
+          </p>
+          <p>
+            投稿はリレーと呼ばれる世界各地にあるサーバーに保存され、クライアントと呼ばれるWebサイトやアプリを使って、ユーザーが自由に選んで見ることができます。
+          </p>
         </div>
         <div>
           <p className="text-xl whitespace-nowrap border-b-2 leading-none border-black text-center p-6 bg-accent-yellow sm:bg-transparent transition-colors">
