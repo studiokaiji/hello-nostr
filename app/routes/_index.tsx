@@ -1,4 +1,3 @@
-import type { MetaFunction } from "@remix-run/cloudflare";
 import { Button } from "~/components/Button";
 import { Header } from "~/components/Header";
 import logoSrc from "~/assets/HelloNostr.svg";
@@ -14,7 +13,6 @@ import nostterPostImageSrc from "~/assets/Post.webp";
 import nostterTrendImageSrc from "~/assets/Trend.webp";
 import nostterProfileImageSrc from "~/assets/Profile.webp";
 import cheeseSrc from "~/assets/Cheese.webp";
-import ogpSrc from "~/assets/OGP.webp";
 import { Link } from "~/components/Link";
 import { Footer } from "~/components/Footer";
 
@@ -126,58 +124,6 @@ const gettingStartedSteps = [
     bgColor: "bg-accent-pink",
   },
 ];
-
-export const meta: MetaFunction = () => {
-  return [
-    { title: "Hello, Nostr! - Nostr日本語チュートリアルサイト" },
-    {
-      name: "text",
-      content:
-        "Nostrについての情報や使い方を紹介するチュートリアルサイトです。",
-    },
-    {
-      tagName: "meta",
-      property: "og:title",
-      content: "Hello, Nostr! - Nostr日本語チュートリアルサイト",
-    },
-    {
-      tagName: "meta",
-      property: "og:description",
-      content:
-        "Nostrについての情報や使い方を紹介するチュートリアルサイトです。",
-    },
-    {
-      tagName: "meta",
-      property: "og:image",
-      content: ogpSrc,
-    },
-    {
-      tagName: "meta",
-      property: "og:url",
-      content: "hello-nostr.studiokaiji.com",
-    },
-    {
-      tagName: "meta",
-      property: "og:type",
-      content: "website",
-    },
-    {
-      tagName: "meta",
-      property: "og:site_name",
-      content: "Hello, Nostr! - Nostr日本語チュートリアルサイト",
-    },
-    {
-      tagName: "meta",
-      property: "og:locale",
-      content: "ja_JP",
-    },
-    {
-      tagName: "meta",
-      property: "twitter:card",
-      content: "summary_large_image",
-    },
-  ];
-};
 
 export default function Index() {
   return (

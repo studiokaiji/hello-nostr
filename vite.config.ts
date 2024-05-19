@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [
     remixCloudflareDevProxy(),
     remix({
-      ssr: true,
+      ssr: false,
     }),
     tsconfigPaths(),
   ],
