@@ -10,6 +10,8 @@ import stylesheet from "~/tailwind.css?url";
 import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
 
+import ogpSrc from "~/assets/OGP.jpg";
+
 import "@fontsource/noto-sans-jp/400.css";
 import "@fontsource/noto-sans-jp/500.css";
 import "@fontsource/noto-sans-jp/700.css";
@@ -44,7 +46,7 @@ export const meta: MetaFunction = () => {
     {
       tagName: "meta",
       property: "og:image",
-      content: "/ogp.jpg",
+      content: ogpSrc,
     },
     {
       tagName: "meta",
