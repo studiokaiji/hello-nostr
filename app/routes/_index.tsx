@@ -19,7 +19,7 @@ import { Footer } from "~/components/Footer";
 const features = [
   {
     title: "メールアドレス・パスワード不要",
-    text: "Nostrは、メールアドレスやパスワードを使わずにアカウントを作成できる分散型SNSです。",
+    text: "Nostrは、メールアドレスやパスワードを使わずにアカウントを作ることができます。",
     image: noEmailPasswordSrc,
     bgColor: "bg-accent-sky",
   },
