@@ -16,7 +16,7 @@ import "@fontsource/noto-sans-jp/700.css";
 
 export const links: LinksFunction = () => {
   return [
-    { rel: "icon", href: "/favicon.ico" },
+    { rel: "icon", href: "/favicon.ico?v=2" },
     { rel: "stylesheet", href: stylesheet },
     ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
   ];
