@@ -46,7 +46,7 @@ export const meta: MetaFunction = () => {
     {
       tagName: "meta",
       property: "og:image",
-      content: ogpSrc,
+      content: `https://hello.nostrapp.me/${ogpSrc}`,
     },
     {
       tagName: "meta",
