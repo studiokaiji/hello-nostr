@@ -1,4 +1,4 @@
-import type { LinksFunction, MetaFunction } from "@remix-run/cloudflare";
+import type { MetaFunction } from "@remix-run/cloudflare";
 import { Button } from "~/components/Button";
 import { Header } from "~/components/Header";
 import logoSrc from "~/assets/HelloNostr.svg";
@@ -15,7 +15,6 @@ import nostterTrendImageSrc from "~/assets/Trend.webp";
 import nostterProfileImageSrc from "~/assets/Profile.webp";
 import cheeseSrc from "~/assets/Cheese.webp";
 import ogpSrc from "~/assets/OGP.webp";
-import faviconSrc from "~/assets/favicon.png";
 import { Link } from "~/components/Link";
 import { Footer } from "~/components/Footer";
 
@@ -127,10 +126,6 @@ const gettingStartedSteps = [
     bgColor: "bg-accent-pink",
   },
 ];
-
-export const links: LinksFunction = () => {
-  return [{ rel: "icon", href: faviconSrc, type: "image/png" }];
-};
 
 export const meta: MetaFunction = () => {
   return [
