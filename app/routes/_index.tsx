@@ -216,11 +216,51 @@ export default function Index() {
             とりあえず使ってみる
           </p>
           <div className="space-y-3 flex flex-col p-6">
-            <Button color="purple">Damus (iOS)</Button>
-            <Button color="emerald">Amethyst (Android)</Button>
-            <Button color="white">Snort (Web)</Button>
-            <Button color="orange">Nostter (Web)</Button>
-            <Button color="pink">Rabbit (Web)</Button>
+            <Button
+              color="purple"
+              element="a"
+              href="https://apps.apple.com/jp/app/damus/id1628663131"
+              target="_blank"
+              rel="noopener"
+            >
+              Damus (iOS)
+            </Button>
+            <Button
+              color="emerald"
+              element="a"
+              href="https://play.google.com/store/apps/details?id=com.vitorpamplona.amethyst&hl=ja&gl=US"
+              target="_blank"
+              rel="noopener"
+            >
+              Amethyst (Android)
+            </Button>
+            <Button
+              color="white"
+              element="a"
+              href="https://snort.social"
+              target="_blank"
+              rel="noopener"
+            >
+              Snort (Web)
+            </Button>
+            <Button
+              color="orange"
+              element="a"
+              href="https://nostter.app"
+              target="_blank"
+              rel="noopener"
+            >
+              Nostter (Web)
+            </Button>
+            <Button
+              color="pink"
+              element="a"
+              href="https://rabbit.syusui.net"
+              target="_blank"
+              rel="noopener"
+            >
+              Rabbit (Web)
+            </Button>
           </div>
         </div>
       </div>
